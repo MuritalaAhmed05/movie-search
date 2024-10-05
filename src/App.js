@@ -14,7 +14,7 @@ function App() {
     if (!debouncedSearchTerm) return;
     try {
       const res = await fetch(
-        `http://www.omdbapi.com/?s=${debouncedSearchTerm}&apikey=8a71654d`
+        `https://www.omdbapi.com/?s=${debouncedSearchTerm}&apikey=8a71654d`
       );
       const result = await res.json();
       console.log(result);
